@@ -100,11 +100,7 @@ export default function Home() {
       setTasks(tasks => [
         ...tasks,
         {
-<<<<<<< HEAD
           id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-=======
-          id: Date.now().toString(),
->>>>>>> 291c10099994934e68944bce8327b7ea61ee6c65
           title,
           dueDate,
           priority,
@@ -117,7 +113,6 @@ export default function Home() {
   };
 
   const handleDeleteTask = (id) => {
-<<<<<<< HEAD
     console.log("Delete button clicked for task ID:", id);
     console.log("Current tasks:", tasks);
     
@@ -131,16 +126,6 @@ export default function Home() {
       alert(`Tasks after deletion: ${filteredTasks.length} remaining`);
       return filteredTasks;
     });
-=======
-    Alert.alert("Delete Task", "Are you sure?", [
-      { text: "Cancel", style: "cancel" },
-      {
-        text: "Delete",
-        style: "destructive",
-        onPress: () => setTasks(tasks => tasks.filter(t => t.id !== id)),
-      },
-    ]);
->>>>>>> 291c10099994934e68944bce8327b7ea61ee6c65
   };
 
   const sortedTasks = sortTasks(tasks, sortBy);
