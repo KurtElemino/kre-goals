@@ -18,7 +18,11 @@
     "@expo/vector-icons": "^14.0.2",
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
+<<<<<<< HEAD
     "expo": "^53.0.22",
+=======
+    "expo": "^53.0.8",
+>>>>>>> 291c10099994934e68944bce8327b7ea61ee6c65
     "expo-blur": "~14.1.4",
     "expo-constants": "~17.1.6",
     "expo-font": "~13.3.1",
